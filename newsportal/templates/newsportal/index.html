@@ -1,0 +1,14 @@
+{% extends 'newsportal/default.html' %}
+{% block title %}{{ title }}{% endblock title %}
+
+{% block content %}
+
+{% for post in posts %}
+{{ post.author }}<br>
+{{ post.get_type_post_display }}<br>
+{{ post.category }}<br>
+{{ post.author }}<br>
+{{ post.author }}<br>
+{{ post.author }}<br>
+{% endfor %}
+{% endblock content %}
